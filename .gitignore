@@ -1,4 +1,4 @@
 /env/
-*.sh
-*.DS_store
+*secrets.*
+.DS_store
 *.pyc
