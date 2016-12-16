@@ -4,4 +4,4 @@ Goals
 3. display info on html
 
 Current status
-<img src="static/img/12_15_movie_details.png
+<img src="static/img/12_15_movie_details.png">
