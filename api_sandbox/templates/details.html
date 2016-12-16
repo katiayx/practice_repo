@@ -6,30 +6,21 @@
     <title>Movie Details</title>
   </head>
   <body>
-    <div class="container-fluid">Movie Title</div>
+    <div class="container-fluid"><b>Movie Details</b></div>
   	<div class="container">
     	<div class="row">
-      		<div class="col-xs-12">{{ title }}</div>
+      		<div class="col-xs-12">Movie Title: {{ title }}</div>
     	</div>
     	<div class="row">
-    		<div class="col-xs-12"> {{ synopsis }}</div>
+    		<div class="col-xs-12">Story Summary: {{ synopsis }}</div>
     	</div>
     	<div class="row">
-    		<div class="col-xs-12"> {{ ave_rating }}</div>
+    		<div class="col-xs-12">Average Rating: {{ ave_rating }}</div>
     	</div>
   	</div>
 
-  	<div class="container-fluid"> Rating </div>
-  	<div class="container">
-    	<div class="row">
-      		<div class="col-xs-offset-8 col-xs-4">
-      			<img src="{{poster}}">
-    		</div>
-    	</div> 
-  	</div>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/
       3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
-	
