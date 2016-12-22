@@ -14,7 +14,19 @@ def display_search():
 def get_user_inputs():
     """grab user inputs"""
 
-    q = request.form.get
+    params = {}
+    params["q"] = request.form.get("q")
+    params["sort_by"] = request.form.get("sort_by")
+    params["location.address"] = request.form.get("location.address")
+    params["location.within"] = request.form.get("location.within")
+    params["price"] = request.form.get("price")
+    params["start_date.range_start"] = request.form.get("start_date.range_start")
+    params["start_date.range_end"] = request.form.get("start_date.range_end")
+    params["start_date.keyword"] = request.form.get("start_date.keyword")
+
+
+    return render_template('results.html',
+                        )
 
 
 

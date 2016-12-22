@@ -20,7 +20,7 @@
               <form id='user_input_form' action='/' method='POST'>
                   <li class="search-filter">
                     <span>SEARCH</span>
-                    <label><input id='q' type='text' name='search' required></input></label>
+                    <label><input id='q' type='text' name='q' required></input></label>
                   </li>
                   <li class="divider"></li><br>
                   <li class="search-filter">
@@ -43,16 +43,16 @@
                   </li>
                   <li class="divider"></li><br>
                   <li class="search-filter">
-                    <label><input id="price" type="radio" name="freepaid" value="free">free<br>
-                    <label><input id="price" type="radio" name="freepaid" value="free">paid<br>
-                    <label><input id="price" type="radio" name="freepaid" value="all">all<br>
+                    <label><input id="price-free" type="radio" name="price" value="free">free<br>
+                    <label><input id="price-paid" type="radio" name="price" value="paid">paid<br>
+                    <label><input id="price-all" type="radio" name="price" value="all">all<br>
                   </li>
                   <li class="divider"></li><br>
                   <li class="search-filter">
                     <span>Start Date</span>
-                    <label><input id='start_date.range_start' type='datetime-local' name='start-date'></input></label>
+                    <label><input id='start_date.range_start' type='datetime-local' name='start_date.range_start'></input></label>
                     <span>End Date</span>
-                    <label><input id='start_date.range_end' type='datetime-local' name='end-date'></input></label>
+                    <label><input id='start_date.range_end' type='datetime-local' name='start_date.range_end'></input></label>
                   </li>
                   <li class="divider"></li><br>
                   <li class="search-filter">
