@@ -1,32 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
   	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/
       3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <title>Movie Details</title>
-  </head>
-  <body>
-    <div class="container-fluid"><b>Movie Details</b></div>
-  	<div class="container">
+    <title>Search</title>
+</head>
+<body>
+  <div class='container' id="input">
+  <div class='transbox col-md-4 col-md-offset-4'>
+    <div class="container-fluid"><b></b></div>
+    <div class="container">
       <p>
-      	<div class="row">
-        		<div class="col-xs-12"><em>Movie Title:</em> {{ title }}</div>
-      	</div>
+        <div class="row">
+            <div class="col-xs-12"><em></em> {{ title }}</div>
+        </div>
       </p>
       <p>
-      	<div class="row">
-      		<div class="col-xs-12"><em>Story Summary:</em><br>{{ synopsis }}<br></div>
-      	</div>
+        <div class="row">
+          <div class="col-xs-12"><em>Story Summary:</em><br>{{ synopsis }}<br></div>
+        </div>
       </p>
       <p>
-      	<div class="row">
-      		<div class="col-xs-12"><em>Average Rating:</em> {{ ave_rating }}</div>
-      	</div>
+        <div class="row">
+          <div class="col-xs-12"><em>Average Rating:</em> {{ ave_rating }}</div>
+        </div>
       </p>
-  	</div>
+    </div>
 
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/
-      3.3.7/js/bootstrap.min.js"></script>
-  </body>
+    </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/
+    3.3.7/js/bootstrap.min.js"></script>
+</body>
 </html>

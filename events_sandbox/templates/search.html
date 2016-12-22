@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/
+      3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>events</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/
+          3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <title>Search</title>
+    </head>
+    <body>
+      <div class='container' id="input">
+      <div class='transbox col-md-4 col-md-offset-4'>
+          <h1><b>Events API call</b></h1>
+              <form id='user_input_form' action='/' method='POST'>
+                  <li class="search-filter">
+                    <span>SEARCH</span>
+                    <label><input id='q' type='text' name='search' required></input></label>
+                  </li>
+                  <li class="divider"></li><br>
+                  <li class="search-filter">
+                    <span>Sort By</span>
+                    <select id="sort_by" name="sort_by">
+                      <option value="date">By Date</option>
+                      <option value="distance">By Distance</option>
+                      <option value="best">Most Relevant</option>
+                    </select>
+                  </li>
+                  <li class="divider"></li><br>
+                  <li class="search-filter">
+                    <span>Location Address</span>
+                    <label><input id='location.address' type='text' name='location.address'></input></label>
+                  </li>
+                  <li class="divider"></li><br>
+                  <li class="search-filter">
+                    <span>Location Within</span>
+                    <label><input id='location.within' type='number' name='location.within'></input></label>
+                  </li>
+                  <li class="divider"></li><br>
+                  <li class="search-filter">
+                    <label><input id="price" type="radio" name="freepaid" value="free">free<br>
+                    <label><input id="price" type="radio" name="freepaid" value="free">paid<br>
+                    <label><input id="price" type="radio" name="freepaid" value="all">all<br>
+                  </li>
+                  <li class="divider"></li><br>
+                  <li class="search-filter">
+                    <span>Start Date</span>
+                    <label><input id='start_date.range_start' type='datetime-local' name='start-date'></input></label>
+                    <span>End Date</span>
+                    <label><input id='start_date.range_end' type='datetime-local' name='end-date'></input></label>
+                  </li>
+                  <li class="divider"></li><br>
+                  <li class="search-filter">
+                    <span>Date Keyword</span>
+                      <select id="start_date.keyword" name="start_date.keyword">
+                        <option value="this_week">This Week</option>
+                        <option value="next_week">Next Week</option>
+                        <option value="this_weekend">This Weekend</option>
+                        <option value="next_month">Next Month</option>
+                        <option value="this_month">This Month</option>
+                        <option value="tomorrow">Tomorrow</option>
+                        <option value="today">Today</option>
+                      </select>
+                  </li>
+                  <label><input id='sub_btn' type='submit' value='Apply Filters'></input></label>
+            </form>
+        </div>
+      </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/
+      3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
