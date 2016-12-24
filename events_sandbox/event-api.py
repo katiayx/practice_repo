@@ -2,16 +2,18 @@ import os
 
 import requests
 
-evtbrite_api = os.environ["evtbrite_api"]
-
-
+EB_TOKEN = os.environ["EB_TOKEN"]
 payload = {"q": "python", "sort_by": "date", "start_date.keyword": "next_week"}
-evtburl = "https://www.eventbriteapi.com/v3/events/search/&token=" + evtbrite_api
+search_url = "https://www.eventbriteapi.com/v3/events/search/"
 
 def call_api():
 	"""try eventbrite api"""
 
-	response = requests.get(evtburl, params=payload)
+	response = requests.get(search_url,params=payload,
+		headers = {"Authorization": "Bearer" + EB_TOKEN},
+		verify = True,
+	)
+
 	r_dict = response.json()
 
 	print r_dict
