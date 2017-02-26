@@ -16,8 +16,8 @@ def search_eventbrite():
 
 	response = requests.get(search_url,params=payload,headers=headers).json
 
-	for i in response[key]:
-
+	for i in response:
+		event_title (db) = response.get('title')
 
 # Example 1 - add to database
 # def load_coursera_partners():
